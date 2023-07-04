@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const icon = document.getElementById("icon");
+const menu = document.getElementById("menu");
+
+icon.addEventListener("click", function() {
+  menu.classList.toggle("active");
+});
+
+    </script>
+</head>
+<body>
+    <!-- Biểu tượng -->
+<div id="icon">
+    <svg width="24" height="24" viewBox="0 0 24 24">
+      <path d="M2.25 6.75H21.75V8.25H2.25V6.75ZM2.25 11.25H21.75V12.75H2.25V11.25ZM2.25 15.75H21.75V17.25H2.25V15.75Z" fill="#333333"/>
+    </svg>
+  </div>
+  
+  <!-- Thanh menu -->
+  <div id="menu">
+    <ul>
+      <li><a href="#">Mục 1</a></li>
+      <li><a href="#">Mục 2</a></li>
+      <li><a href="#">Mục 3</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sytle.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>Hoá Đơn</h2>
+            <label>khách hàng <input type="text" class="form-control"></label>
+            <label>
+                loại hàng 
+                <select onchange="chonHang()" id="loaiHang" class="form-control">
+                    <option class="loaiHang" value="1">loại 1</option>
+                    <option class="loaiHang" value="2">loại 2</option>
+                    <option class="loaiHang" value="3">loại 3</option>
+                    <option class="loaiHang" value="4">loại 4</option>
+                </select>
+            </label>
+            <label>đơn giá <input type="text" class="form-control" id="donGia" value="300000" readonly></label>
+            <label>số lượng <input  onchange="soLuong()" type="number" id="soLuonghang" class="form-control"></label>
+            <label>thành tiền<input type="text" id="thanhTien" class="form-control"></label>
+            <span class="form-control">nơi nhận hàng 
+                <label><input onclick="vanchuyennoiThanh()" type="radio" name="nhanhang">nội thành</label>
+                <label><input onclick="vanchuyenngoaiThanh()" type="radio" name="nhanhang">ngoại thành</label>
+            </span> 
+            <label>phí vận chuyển<input id="phivanchuyen" type="text" class="form-control" readonly></label>
+            <div class="btn">
+
+                <button>đặt mua</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

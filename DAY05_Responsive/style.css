@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1440px;
+    margin: auto;
+}
+.product{
+    display: grid;
+    /* grid-template-columns: auto auto auto;s */
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+}

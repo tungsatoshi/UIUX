@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        .desktop-menu{
+            display: none;
+        }
+        .mobile-menu{
+                /* display: block; */
+            }
+
+        @media(min-width:768px){
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .desktop-menu{
+                display: block; 
+            }
+            ul{
+                display: inline-block;
+            }
+            li{
+                display: inline-block;
+            }
+            .mobile-menu{
+                display: none;
+            }
+        }
+        svg{
+            width:100px;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://picsum.photos/100/30" alt="">
+            </div>
+            <nav>
+                <div class="desktop-menu">
+                    <ul>
+                        <li>menu</li>
+                        <li>menu</li>
+                        <li>menu</li>
+                        <li>menu</li>
+                        <li>menu</li>
+                    </ul>
+                    <button>Signin</button>
+                    <button>Signup</button>
+                </div>
+                <div class="mobile-menu">
+                    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 18V15.75H27.5V18H0.5ZM0.5 10.125V7.875H27.5V10.125H0.5ZM0.5 2.25V0H27.5V2.25H0.5Z" fill="black"/>
+                        </svg>
+                        
+                        
+                </div>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script>
+        var icon=document.getElementById('icon-menu');
+        var menu=document.getElementById('menu');
+        icon.onclick=function(){
+            menu.classList.toggle('hidden');
+        }
+
+        // var menu = document.getElementById('menu_icon');
+        // var bar = document.getElementById('menubar');
+        // // var head = document.getElementById('header');
+        
+        
+        
+        // menu.onclick = function () {
+            
+        //     bar.classList.toggle('hidden');
+
+//         var icon = document.getElementById('icon-menu');
+// var menu = document.getElementById('menu');
+
+// icon.addEventListener('click', function() {
+//     menu.classList.toggle('hidden');
+// });
+
+    </script>
+</head>
+<body>
+    <div class="p-[5px] xl:max-w-[1216px] m-auto box-border">
+        <div class="md:flex md:justify-between">
+            <div class="ml-[5px] flex items-center">
+                <img src="images/Group 11.png" alt="">
+            </div>
+            <div id="menu" class="md:block hidden">
+                <ul>
+                    <li class="p-[32px] md:inline-block"><a href="" class="text-xs text-[#333333] font-[400]">MAIN</a></li>
+                    <li class="p-[32px] md:inline-block"><a href="" class="text-xs text-[#333333] font-[400]">GALLERY</a></li>
+                    <li class="p-[32px] md:inline-block"><a href="" class="text-xs text-[#333333] font-[400]">PROJECTS  </a></li>
+                    <li class="p-[32px] md:inline-block"><a href="" class="text-xs text-[#333333] font-[400]">CERTIFICATIONS</a></li>
+                    <li class="p-[32px] md:inline-block"><a href="" class="text-xs text-[#333333] font-[400]">CONTACTS</a></li>
+                </ul>
+                <svg id="icon-menu" class="md:hidden  " width="39" height="39" viewBox="0 0 24 24">
+                    <path d="M2.25 6.75H21.75V8.25H2.25V6.75ZM2.25 11.25H21.75V12.75H2.25V11.25ZM2.25 15.75H21.75V17.25H2.25V15.75Z" fill="#333333"/>
+                </svg>
+            </div>
+            
+        </div>
+
+        <div class="">
+            <img src="images/Rectangle 1.png" alt="">
+        </div>
+
+        <div class="">
+            <div class="md:my-[64px] my-[20px] text-center">
+                <span class="xl:text-6xl md:text-5xl text-[#979797] font-[300]">PHOTO</span>
+                <span class="ml-[24px] xl:text-6xl md:text-5xl font-bold">GALLERY</span>
+            </div>
+            <div class="md:grid xl:grid-cols-4 md:grid-cols-3 md:gap-[32px] grid grid-cols-2 gap-[20px]">
+                <a href=""><img src="images/Rectangle 23.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 24.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 25.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 26.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 28.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 29.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 30.png" alt="" class="w-full"></a>
+                <a href=""><img src="images/Rectangle 31.png" alt="" class="w-full"></a>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="md:my-[64px] my-[20px] text-center">
+                <span class="xl:text-6xl md:text-5xl  text-[#979797] font-[300]">OUR</span>
+                <span class="ml-[24px] xl:text-6xl md:text-5xl  font-bold">PROJECTS</span>
+            </div>
+            <div class="xl:block md:grid md:grid-cols-2 md:gap-[32px]">
+                <div class="xl:grid xl:grid-cols-2 xl:gap-[32px]">
+                    <div class="">
+                        <a href=""><img src="images/Rectangle 32.png" alt=""></a>
+                    </div>
+                    <div class="">
+                        <p class="xl:my-0 my-[16px] text-4xl text-[#BDBDBD] font-[400]"><a href="">Sample Project 1</a></p>
+                        <p class="my-[25px] text-xl font-[400]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="flex">
+                            <p class="text-xs text-[#333333]">View More</p>
+                            <img class="ml-[15px]" src="images/arrow-2-right-long.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="xl:my-[32px] xl:grid xl:grid-cols-2 xl:gap-[32px]">
+                    <div class="mt-[26px] md:mt-0">
+                        <a href=""><img src="images/Rectangle 33.png" alt=""></a>
+                    </div>
+                    <div class="">
+                        <p class="xl:my-0 my-[16px] text-4xl text-[#BDBDBD] font-[400]"><a href="">Sample Project 2</a></p>
+                        <p class="my-[25px] text-xl font-[400]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="flex">
+                            <p class="text-xs text-[#333333]">View More</p>
+                            <img class="ml-[15px]" src="images/arrow-2-right-long.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-[100px] p-[20px] md:h-[90px] h-[109px] md:flex md:justify-between items-center bg-[#2C2C2C]">
+            <div class="flex justify-center">
+                <img src="images/Group 11 1.png" alt="">
+            </div>
+            <div class="mt-[12px] md:mt-0 text-center text-[#C8C8C8] md:text-[16px] md:leading-[22px] text-xs">
+                <p>© 2021 All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById('icon-menu');
+        var menu = document.getElementById('menu');
+
+        icon.onclick=function(){
+            menu.classList.toggle('hidden');
+        }
+
+    </script>
+</body>
+</html>
